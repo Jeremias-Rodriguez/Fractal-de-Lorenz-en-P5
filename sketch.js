@@ -32,11 +32,9 @@ function draw() {
 	y = y + dy;
 	z = z + dz;
 
-//Activar rotacion automatica
-/*
+//Rotacion automatica
 	rotateX(frameCount * 0.005);
 	rotateZ(frameCount * 0.005);
-*/
 	points.push(createVector(x, y, z));
 	
 	translate(0,0,-80);
@@ -49,9 +47,8 @@ function draw() {
 		stroke(hu, 255, 255);
 		vertex(v.x, v.y, v.z);
 		hu += 0.1;
-		if(hu > 255){
+		if(hu > 255)
 			hu = 0;
-		}
 	});
 	endShape();
 }
