@@ -1,14 +1,13 @@
-Fractal de Lorenz usando P5
+#Fractal de Lorenz
 
 Se tomo las ecuaciones diferenciales del caos de Lorenz
 
-dx/dt = G(y - x)
-dx = (G(y - x)) . dt 
+>dx/dt = G(y - x)
+>dy/dt = Rx - y - xz
+>dz/dt = xy - Bz
 
-dy/dt = Rx - y - xz
+dx = (G(y - x)) . dt
 dy = (Rx - y - xz) . dt
-
-dz/dt = xy - Bz
 dz = (xy - Bz) . dt
 
 Para la generacion del fractal se inicia en el punto (1, 1, 1)
