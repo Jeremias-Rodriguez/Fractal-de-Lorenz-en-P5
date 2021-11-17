@@ -1,4 +1,4 @@
-#Fractal de Lorenz
+# Fractal de Lorenz
 
 Se tomo las ecuaciones diferenciales del caos de Lorenz
 
