@@ -43,14 +43,15 @@ function draw() {
 	scale(5);
 	noFill();
 
-	hu = 0.0;
+//Lo siguiente genera el fractal
+	h = 0.0;
 	beginShape();
 	points.forEach(v => {
-		stroke(hu, 255, 255);
+		stroke(h, 255, 255);  //H, S, B (?)
 		vertex(v.x, v.y, v.z);
-		hu += 0.1;
-		if(hu > 255)
-			hu = 0;
+		h += 0.1;
+		if(h > 255)
+			h = 0;
 	});
 	endShape();
 }
