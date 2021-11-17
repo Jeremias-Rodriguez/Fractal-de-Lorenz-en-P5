@@ -32,6 +32,8 @@ function draw() {
 	y = y + dy;
 	z = z + dz;
 
+	console.log("X: ",x,"  | Y: ",y,"  |  Z: ", z);
+
 //Rotacion automatica
 	rotateX(frameCount * 0.005);
 	rotateZ(frameCount * 0.005);
